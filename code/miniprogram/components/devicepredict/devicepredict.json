@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tool-icon":"../toolicon/toolicon"
+  }
+}

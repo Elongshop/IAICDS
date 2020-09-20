@@ -1,0 +1,15 @@
+<view class='if-container'>
+	是否要渲染模块？
+	<van-switch checked="{{ checked }}" bind:change="onChange" />
+</view>
+
+<block wx:if="{{checked}}">
+	<view class='checked-box'>
+  <text style="font-weight:bold">wx:if和hidden的比较：</text>
+  被hidden控制的模块始终会被渲染，只是简单的控制显示和隐藏。
+  wx:if是惰性渲染，如果初始渲染条件为false，则不会渲染模块。直到渲染条件为true时才会开始渲染。
+  一般来说，wx:if有更高的切换消耗而hidden有更高的初始渲染消耗。
+  因此，如果需要频繁切换的情景下，用hidden更好，如果在运行时条件不大可能改变则wx:if较好。
+  </view>
+</block>
+

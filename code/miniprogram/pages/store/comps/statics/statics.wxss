@@ -1,0 +1,18 @@
+.static-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.static-desc{
+  text-indent: 2rem;
+  margin-bottom: 10px;
+}
+
+.static-result{
+  line-height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}

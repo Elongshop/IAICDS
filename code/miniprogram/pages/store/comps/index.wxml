@@ -1,0 +1,53 @@
+<!--miniprogram/pages/comps/index.wxml-->
+<block wx:if='{{loading}}'>
+	<view class='loading-container'>
+		<van-loading type="spinner" size="40px" />
+	</view>
+</block>
+
+<block wx:else>
+	<store-comp compEngName="{{compEngName}}" compChinName="{{compChinName}}" compDesc="{{compDesc}}" imgSrc="{{imgSrc}}" slotName='{{key}}'>
+		<view slot='{{key}}'>
+			<block wx:if="{{key === 'flex'}}">
+				<flex></flex>
+			</block>
+			<block wx:if="{{key === 'scrollview'}}">
+				<scrollview></scrollview>
+			</block>
+			<block wx:if="{{key === 'picker'}}">
+				<picker></picker>
+			</block>
+			<block wx:if="{{key === 'scatter'}}">
+				<scatter></scatter>
+			</block>
+			<block wx:if="{{key === 'line'}}">
+				<line></line>
+			</block>
+			<block wx:if="{{key === 'clouddatabase'}}">
+				<cloud-database></cloud-database>
+			</block>
+			<block wx:if="{{key === 'cloudstorage'}}">
+				<cloud-storage></cloud-storage>
+			</block>
+			<block wx:if="{{key === 'cloudfunc'}}">
+				<cloud-func></cloud-func>
+			</block>
+			<block wx:if="{{key === 'interval'}}">
+				<interval></interval>
+			</block>
+			<block wx:if="{{key === 'onload'}}">
+				<onload></onload>
+			</block>
+			<block wx:if="{{key === 'ifelse'}}">
+				<if-else></if-else>
+			</block>
+			<block wx:if="{{key === 'timer'}}">
+				<timer></timer>
+			</block>
+			<block wx:if="{{key === 'static'}}">
+				<statics></statics>
+			</block>
+		</view>
+
+	</store-comp>
+</block>

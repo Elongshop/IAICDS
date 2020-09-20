@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs":"@vant/weapp/tabs/index",
+    "device-predict":"../../../../components/devicepredict/devicepredict",
+    "time":"../../../../components/time/time",
+    "device-names":"../../../../components/devicenames/devicenames",
+    "device-analysis":"../../../../components/deviceanalysis/deviceanalysis",
+    "device-picker":"../../../../components/picker/picker",
+    "params-view":"../../../../components/scrollview/scrollview",
+    "chart":"../../../../components/chart/chart"
+  }
+}

@@ -1,0 +1,41 @@
+<!--miniprogram/pages/apps/forms/form_user/form_user.wxml-->
+<view class="container">
+    <van-divider contentPosition="center" fontSize="20" textColor="#85adad">技术员详情</van-divider>
+    <view class="container_two">
+        <view class="department" style="color:white">
+            轴承外圈维修员
+            <view class="num" style="color:white">工号：110 </view>
+        </view>
+        <view class="line"></view>
+        <view class="text_misson" style="color:white">任务进度</view>
+        <view class="progress">
+            <van-circle value="{{ value }}" color="{{ gradientColor }}" text="已完成" stroke-width="6" />
+        </view>
+    </view>
+</view>
+<van-divider contentPosition="center" fontSize="18" textColor="#007fff">工单详情</van-divider>
+<view class="container_three">
+    <van-divider contentPosition="left" fontSize="15" textColor='red'>
+        {{state}}
+    </van-divider>
+    <view class="big_box">
+        <view class="toDo">
+            <van-icon name="flag-o" color="red" size="50rpx" class="icon1" />
+            <view class="text_todo">外圈故障 ({{state}})</view>
+            <van-button type="primary" round size="small" bindtap="form_confirm" data-state="处理中"
+                disabled='{{disabled_confirm}}'>确认处理</van-button>
+            <view class="inter"></view>
+            <van-button type="primary" round size="small" bindtap="form_submit" data-state="待处理"
+                disabled='{{disabled_submit}}'>确认提交</van-button>
+        </view>
+    </view>
+    <van-divider contentPosition="right" fontSize="15" textColor="#65cc00">已完成</van-divider>
+    <view class="done">
+        <view wx:for="{{orArray}}" wx:key="index" class="done">
+            <view class="box">
+                <van-icon name="completed" color="#00b300" size="50rpx" class="icon1" />
+                <view class="text_done">{{item.type}} 完成时间：{{item.time}}</view>
+            </view>
+        </view>
+    </view>
+</view>

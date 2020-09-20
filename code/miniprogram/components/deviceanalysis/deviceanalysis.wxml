@@ -1,0 +1,40 @@
+<view class="deviceAnalysisContainer">
+	<view class="deviceMonitorNumsBox">
+		<view class="deviceMonitors" style="color:#0066FF">2</view>
+		<view class="deviceMonitorNumsDesc">设备数量</view>
+	</view>
+	<view class="deviceMonitorContent">
+		<view class="deviceMonitorNums" style="color:	#444444">0</view>
+		<view class="deviceMonitorNumsDesc">待机</view>
+	</view>
+	<view class="deviceMonitorContent">
+		<view class="deviceMonitorNums">2</view>
+		<view class="deviceMonitorNumsDesc">运行</view>
+	</view>
+	<view class="deviceMonitorContent">
+		<view class="deviceMonitorNums" style="color:#227700">
+			<text wx:if='{{fan_21_predicts[devicePredictIndex] ==0 && fan_15_predicts[devicePredictIndex] ==0}}'>2</text>
+			<text wx:elif='{{fan_21_predicts[devicePredictIndex] ==1 && fan_15_predicts[devicePredictIndex] ==1}}'>0</text>
+			<text wx:else>1</text>
+		</view>
+		<view class="deviceMonitorNumsDesc">正常</view>
+	</view>
+	<view class="deviceMonitorContent">
+		<view class="deviceMonitorNums" style="color:#C63300">
+			<text wx:if='{{fan_21_predicts[devicePredictIndex] ==0 && fan_15_predicts[devicePredictIndex]==0}}'>0</text>
+			<text wx:elif='{{fan_21_predicts[devicePredictIndex] ==1 && fan_15_predicts[devicePredictIndex] ==1}}'>2</text>
+			<text wx:else>1</text>
+		</view>
+		<view class="deviceMonitorNumsDesc">故障</view>
+	</view>
+	<view class='tool-box'>
+		<block wx:if="{{iconsShow}}">
+			<view class='box-container'>
+				<view class='ui-box' catchtap="toCompPage" data-id='flex'>UI</view>
+				<view class='js-box' catchtap="toCompPage" data-id='fan_if'>JS</view>
+			</view>
+		</block>
+		<image src='../../images/tool.png' class='tool-icon' bind:tap="handleIconTap" bind:touchend='handleIconEnd'
+			data-id='time'></image>
+	</view>
+</view>

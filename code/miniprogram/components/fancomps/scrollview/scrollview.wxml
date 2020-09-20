@@ -1,0 +1,1 @@
+<view class='to-store'><text class='text' catchtap='toStoreComp' data-value='scrollview'>点击体验</text>scroll-view的基本使用</view>

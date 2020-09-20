@@ -1,0 +1,37 @@
+<view class='comp-page-container'>
+	<view class='store-page-title'>Compontents Store</view>
+	<view class='store-page-desc'>丰富的工业APP组件库，包括基础的UI组件，表单组件，前端逻辑组件和云开发相关的组件等。</view>
+	<view class='store-page-list'>
+		<comp-list title="UI可视化" icon="eye-o">
+			<comp-item title='Flex布局' compPath='comps/index' key='flex'></comp-item>
+			<comp-item title='scroll-view 可视区域滚动' showBorder='{{false}}' compPath='comps/index' key='scrollview'></comp-item>
+		</comp-list>
+	</view>
+	<view class='store-page-list'>
+		<comp-list title="表单相关" icon="edit">
+			<comp-item title='picker 选择器' showBorder='{{false}}' compPath='comps/index' key='picker'></comp-item>
+		</comp-list>
+	</view>
+	<view class='store-page-list'>
+		<comp-list title="Echarts图表" icon="chart-trending-o">
+			<comp-item title='折线图' compPath='comps/index' key='line'></comp-item>
+			<comp-item title='散点图' showBorder='{{false}}' compPath='comps/index' key='scatter'></comp-item>
+		</comp-list>
+	</view>
+	<view class='store-page-list'>
+		<comp-list title="云开发相关" icon="apps-o">
+			<comp-item title='云数据库' compPath='comps/index' key='clouddatabase'></comp-item>
+			<comp-item title='云函数' compPath='comps/index' key='cloudfunc'></comp-item>
+			<comp-item title='云存储' showBorder='{{false}}' compPath='comps/index' key='cloudstorage'></comp-item>
+		</comp-list>
+	</view>
+	<view class='store-page-list'>
+		<comp-list title="逻辑交互" icon="cluster-o">
+			<comp-item title='定时器' compPath='comps/index' key='interval'></comp-item>
+			<comp-item title='钩子函数' compPath='comps/index' key='onload'></comp-item>
+			<comp-item title='条件渲染' compPath='comps/index' key='ifelse'></comp-item>
+			<comp-item title='时间戳' compPath='comps/index' key='timer'></comp-item>
+			<comp-item title='数据统计' showBorder='{{false}}' compPath='comps/index' key='static'></comp-item>
+		</comp-list>
+	</view>
+</view>

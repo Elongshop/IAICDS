@@ -1,0 +1,11 @@
+<!--miniprogram/pages/apps/forms/index.wxml-->
+<view class="outline">
+<view class="container">
+<form-predict></form-predict>
+<image src="https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/form_bearing2.png?sign=f5d37a70b9dc6646e39ec5cde7f027d2&t=1600307735" class="form_bearing"></image>
+</view>
+
+<view class="container_two">
+    <van-button type="primary" size="large" bindtap="to_form_manage">工单管理</van-button>
+</view>
+</view>

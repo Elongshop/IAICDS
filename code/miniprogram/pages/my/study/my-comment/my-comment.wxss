@@ -1,0 +1,4 @@
+/* miniprogram/pages/my/study/my-comment/my-comment.wxss */
+.com{
+  margin-bottom: 10rpx;
+}

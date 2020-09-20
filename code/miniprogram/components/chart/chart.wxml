@@ -1,0 +1,6 @@
+<view class="chart-container">
+	<ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class='loading-container' wx:if="{{showLoading===1}}">
+	<van-loading size="24px" vertical>加载中...</van-loading>
+</view>

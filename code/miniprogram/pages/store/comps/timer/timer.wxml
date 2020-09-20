@@ -1,0 +1,4 @@
+<view class='timer-container'>
+	<button plain="true" class="btn" bindtap="setCurrentTime" disabled="{{timerDisabled}}">点击获取时间戳</button>
+	<view wx:if="{{visiable_time == true}}" class='date'>{{time}}</view>
+</view>

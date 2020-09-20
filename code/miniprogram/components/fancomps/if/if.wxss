@@ -1,0 +1,6 @@
+@import '../../common.wxss';
+.desc1{
+  width: 100%;
+  box-sizing: border-box;
+  text-align:center;
+}

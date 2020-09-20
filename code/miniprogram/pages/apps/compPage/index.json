@@ -1,0 +1,20 @@
+{
+  "usingComponents": {
+    "van-divider": "@vant/weapp/divider/index",
+    "code-img":"../../../components/codeimg/codeimg",
+    "comp-title":"../../../components/comptitle/comptitle",
+    "app-comp":"../../../components/appcomp/appcomp",
+    "fan-flex":"../../../components/fancomps/flex/flex",
+    "fan-algo":"../../../components/fancomps/algo/algo",
+    "fan-axios":"../../../components/fancomps/axios/axios",
+    "fan-chart":"../../../components/fancomps/chart/chart",
+    "fan-cloud":"../../../components/fancomps/cloud/cloud",
+    "fan-if":"../../../components/fancomps/if/if",
+    "fan-interval":"../../../components/fancomps/interval/interval",
+    "fan-statics":"../../../components/fancomps/statics/statics",
+    "fan-picker":"../../../components/fancomps/picker/picker",
+    "fan-scrollview":"../../../components/fancomps/scrollview/scrollview",
+    "fan-timer":"../../../components/fancomps/timer/timer",
+    "form-cloud":"../../../components/formcomps/cloud/cloud"
+  }
+}

@@ -1,0 +1,110 @@
+/* miniprogram/pages/my/index.wxss */
+.blur{
+  height:180rpx;
+  filter: blur(40rpx);
+  opacity: 0.8;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  position: absolute;
+}
+
+.container-two{
+  display: flex;
+  flex-direction: column;
+}
+
+.user-img{
+  width: 185rpx;
+  height:185rpx;
+  border-radius:50%;
+  overflow:hidden;
+  margin-top: 57rpx;
+  margin-left: 116rpx;
+}
+
+.user-name{
+  width: 185rpx;
+  height: 70rpx;
+  margin-left: 126rpx;
+  margin-top: 76rpx;
+  
+}
+
+.user-gender{
+  width: 160rpx;
+  height: 70rpx;
+  margin-left: 175rpx;
+  margin-top: 0;
+  
+}
+
+.container-three{
+  display: flex;
+  margin-top: 36rpx;
+  margin-left: 36rpx;
+}
+
+#relogin{
+  margin-top: 76rpx;
+  margin-left: 53rpx;
+}
+
+#logout{
+  margin-left: 116rpx;
+  margin-top: 76rpx;
+}
+
+.new-guidence{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  height: 300rpx;
+}
+
+.my-study{
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-box{
+  white-space: nowrap;
+  height: 400rpx;
+}
+
+.card-box{
+  display: inline-block;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 360rpx;
+  width: 400rpx;
+  margin: 30rpx 40rpx;
+  font-size: 36rpx;
+  background: url('https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/backgorund3.jpg?sign=f0ae4e5218507d2e00f5384d12e4d586&t=1600503547');
+  border-radius: 15rpx;
+}
+
+
+.box{
+  height: 80rpx;
+}
+
+text{
+  color: white;
+  font-style: oblique;
+  font-size: 50rpx;
+}
+
+.van-grid-item__text text{
+  color: #646566;
+  font-size: 12px;
+  font-style: normal;
+}

@@ -1,0 +1,14 @@
+<block wx:if="{{loading}}">
+	<view class='loading-container'>
+		<van-loading type="spinner" color="#1989fa" />
+	</view>
+
+</block>
+<block wx:else>
+	<view class='interval-container'>
+		<text>延迟</text>
+		<van-stepper value="{{ delay}}" min="1" max="5" integer bind:change="onChange" 
+    input-width="40px" button-size="32px" disabled='{{disabled}}' />秒后执行延迟事件
+		<button size='mini' type="primary" bindtap="intervalTap" disabled='{{disabled}}'>执行</button>
+	</view>
+</block>

@@ -1,0 +1,4 @@
+<view class='comp-code-container'>
+	<slot></slot>
+	<image src='{{imgSrc}}' style="width:90%;" mode='widthFix'></image>
+</view>

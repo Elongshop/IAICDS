@@ -1,0 +1,55 @@
+.circleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 140px;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+}
+
+.circle {
+  height: 120px;
+  width: 120px;
+  border-radius: 60%;
+  background: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerCircle {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.predictText{
+  font-size:30px;
+  font-weight:bold;
+  color:#C63300;
+}
+
+.algo-icon{
+  position: absolute;
+  top: 0;
+  left: 42%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 35px;
+}
+
+.cloud-icon{
+  position: absolute;
+  right: 40%;
+  bottom: 10%;
+  width: 35px;
+}
+

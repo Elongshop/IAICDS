@@ -1,0 +1,25 @@
+<!--miniprogram/pages/my/my-study/my-note/my-note.wxml-->
+<van-divider dashed contentPosition="right" fontSize="25" textColor="#667f99">我的笔记</van-divider>
+
+<van-divider contentPosition="left" borderColor="#eaeae1">学习目标</van-divider>
+
+<textarea placeholder="学习目标～" placeholder-style="color:#669999;"
+bindinput="onplanContentChange"></textarea>
+
+<van-divider contentPosition="left" borderColor="#dfdfd2">学习进度</van-divider>
+
+<textarea placeholder="学习进度～" bindinput="onprogressContentChange"></textarea>
+
+
+<van-divider contentPosition="left" borderColor="#dfdfd2">学习成果</van-divider>
+
+<textarea placeholder="学习成果～" placeholder-style="color:#669999"       bindinput="ongainContentChange"></textarea>
+
+
+<van-divider contentPosition="left" borderColor="#d5d5c3">学习总结</van-divider>
+
+<textarea placeholder="学习总结～" bindinput="onconclusionContentChange"></textarea>
+
+<van-divider />
+<van-button size="large" type="info" bindtap="submit">提交笔记</van-button>
+<view class="line"></view>

@@ -1,0 +1,18 @@
+<view class="container">
+  <van-divider contentPosition="center" fontSize="18">功能简介图</van-divider>
+<view class="box">
+<van-image width="800rpx" height="500rpx" src="https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/%E6%9C%AA%E6%A0%87%E9%A2%98-1.png?sign=b490b66c98841e4036a43ec3d79636ce&t=1600534858" />
+</view>
+
+<van-divider contentPosition="center" fontSize="18">功能简述</van-divider>
+
+<view class="text1">
+左一为本小程序案例部分，主要有风机和工单案例。
+</view>
+<view class="text2">
+左二为风机案例的子页面，每个功能模块都有小扳手(组件拆解入口)，点击会出现短暂的详细组件简述，并且可点击进入详情页面。
+</view>
+<view class="text3">
+右一为本小程序的组件库，其中包含大量的常用、通用的工业组件，每个部分都有体验，并且与案例中的组件进行了联系，但又不同于案例中具体应用组件。
+</view>
+</view>

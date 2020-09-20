@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "comp-list":"../../components/complist/complist",
+    "comp-item":"../../components/compitem/compitem"
+  }
+}

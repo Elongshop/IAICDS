@@ -1,0 +1,22 @@
+/* miniprogram/pages/apps/forms/index.wxss */
+
+.container{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1000rpx;
+  background-color: #FFFFFF;
+  position: absolute;
+  /* border: springgreen solid; */
+}
+
+.form_bearing{
+  width: 822rpx;
+  height: 600rpx;
+  margin-top: 150rpx;
+  position: absolute;
+}
+
+.container_two{
+  margin-top: 1000rpx;
+}

@@ -1,0 +1,12 @@
+<view class='static-container'>
+	<view class='static-desc'>使用Math.max()和Math.min()方法能获取传入的数据的最大值和最小值：</view>
+	<checkbox-group bindchange="checkboxChange" style="margin-bottom:20px">
+		<label class="checkbox" wx:for="{{items}}">
+			<checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+		</label>
+	</checkbox-group>
+	<view class='static-result'>
+		<view>最大值：<text style="color:orange;font-weight:bold">{{max}}</text></view>
+		<view>最小值：<text style="color:purple;font-weight:bold">{{min}}</text></view>
+	</view>
+</view>

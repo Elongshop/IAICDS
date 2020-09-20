@@ -1,0 +1,21 @@
+.box{
+  display: flex;
+  flex-direction: row;
+  margin:5rpx ;
+}
+
+.text1{
+  color: royalblue;
+  text-align: left;
+  margin:5rpx ;
+}
+
+.text2{
+  color: cadetblue;
+  margin:5rpx ;
+}
+
+.text3{
+  color: darkslategrey;
+  margin:5rpx ;
+}

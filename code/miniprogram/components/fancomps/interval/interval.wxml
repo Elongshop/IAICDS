@@ -1,0 +1,8 @@
+<view class='desc'>通过设置需要延迟执行的时间，体验setInterval函数的执行效果：</view>
+<view class='interval-container'>
+  <van-stepper value="{{ delay}}" min="1" max="5" integer bind:change="onChange" input-width="40px" button-size="32px"
+    disabled='{{disabled}}' />
+    <button size='mini' type="primary" bindtap="intervalTap" disabled='{{disabled}}'>执行</button>
+</view>
+<view class='desc'>setInterval和setTimeout的区别是：setInterval是每隔一段时间就会触发一次，setTimeout是延迟执行一次。</view>
+<view class='desc'><text class='text' catchtap='toStoreComp' data-value='interval'>点击体验</text>setTimeout的使用</view>

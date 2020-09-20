@@ -1,0 +1,23 @@
+<radio-group class="radio-group" bindchange="radioChange">
+	<radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+		<text>{{item.value}}</text>
+	</radio>
+</radio-group>
+<block wx:if="{{radioSelected === 'scroll-y'}}">
+	<view class="page-section-spacing">
+		<scroll-view scroll-y="true" style="height: 300rpx;">
+			<view class="scroll-view-item demo-text-1">1</view>
+			<view class="scroll-view-item demo-text-2">2</view>
+			<view class="scroll-view-item demo-text-3">3</view>
+		</scroll-view>
+	</view>
+</block>
+<block wx:if="{{radioSelected === 'scroll-x'}}">
+	<view class="page-section-spacing">
+		<scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+			<view id="demo1" class="scroll-view-item_H demo-text-1">1</view>
+			<view id="demo2" class="scroll-view-item_H demo-text-2">2</view>
+			<view id="demo3" class="scroll-view-item_H demo-text-3">3</view>
+		</scroll-view>
+	</view>
+</block>

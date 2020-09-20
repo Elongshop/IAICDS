@@ -1,0 +1,66 @@
+<!--miniprogram/pages/my/study/my-notebook/my-notebook.wxml-->
+<van-divider contentPosition="right" fontSize="20" textColor="#667f99">NOTEBOOK</van-divider>
+
+<view class="header">
+  当前笔记「{{index}}」,写于{{texttime_arry[index-1]}}
+</view>
+<van-tabs active="{{ active }}">
+  <van-tab title="学习目标">
+      <view class="content" style="font-size:10">
+      {{textplan_arry[index-1]}}
+      </view>
+  </van-tab>
+  <van-tab title="学习进度">
+      <view class="content" style="font-size:10">
+      {{textprogress_arry[index-1]}}
+      </view>
+  </van-tab>
+  <van-tab title="学习成果">
+      <view class="content" style="font-size:10">
+      {{textgain_arry[textgain_arry.length-1]}}
+      </view>
+  </van-tab>
+  <van-tab title="学习总结">
+      <view class="content" style="font-size:10">
+      {{textconclusion_arry[textconclusion_arry.length-1]}}
+      </view>
+  </van-tab>
+</van-tabs>
+
+<van-divider contentPosition="left" fontSize="15" textColor="#667f99">笔记本目录</van-divider>
+
+
+<view class="notebooks_menu" wx:if="{{textconclusion_arry.length>=5}}" >
+
+      <view class="item" bindtap="toto" data-length="{{textconclusion_arry.length}}" >「{{textconclusion_arry.length}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-1]}}]</view>
+      <view class="item" bindtap="toto"  data-length='{{textconclusion_arry.length-1}}'>「{{textconclusion_arry.length-1}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-2]}}]</view>
+      <view class="item" bindtap="toto" data-length='{{textconclusion_arry.length-2}}'>「{{textconclusion_arry.length-2}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-3]}}]</view>
+      <view class="item" bindtap="toto" data-length='{{textconclusion_arry.length-3}}'>「{{textconclusion_arry.length-3}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-4]}}]</view> 
+      <view class="item" bindtap="toto" data-length='{{textconclusion_arry.length-4}}'>「{{textconclusion_arry.length-4}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-5]}}]</view>
+</view>
+<view class="notebooks_menu" wx:elif="{{textconclusion_arry.length==4}}">
+      <view class="item" bindtap="toto" data-length="{{textconclusion_arry.length}}" >「{{textconclusion_arry.length}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-1]}}]</view>
+      <view class="item" bindtap="toto"  data-length='{{textconclusion_arry.length-1}}'>「{{textconclusion_arry.length-1}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-2]}}]</view>
+      <view class="item" bindtap="toto" data-length='{{textconclusion_arry.length-2}}'>「{{textconclusion_arry.length-2}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-3]}}]</view>
+      <view class="item" bindtap="toto" data-length='{{textconclusion_arry.length-3}}'>「{{textconclusion_arry.length-3}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-4]}}]</view> 
+</view>
+<view class="notebooks_menu" wx:elif="{{textconclusion_arry.length==3}}">
+      <view class="item" bindtap="toto" data-length="{{textconclusion_arry.length}}" >「{{textconclusion_arry.length}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-1]}}]</view>
+      <view class="item" bindtap="toto"  data-length='{{textconclusion_arry.length-1}}'>「{{textconclusion_arry.length-1}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-2]}}]</view>
+      <view class="item" bindtap="toto" data-length='{{textconclusion_arry.length-2}}'>「{{textconclusion_arry.length-2}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-3]}}]</view>
+</view>
+<view class="notebooks_menu" wx:elif="{{textconclusion_arry.length==2}}">
+      <view class="item" bindtap="toto" data-length="{{textconclusion_arry.length}}" >「{{textconclusion_arry.length}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-1]}}]</view>
+      <view class="item" bindtap="toto"  data-length='{{textconclusion_arry.length-1}}'>「{{textconclusion_arry.length-1}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-2]}}]</view>
+</view>
+
+
+<view class="notebooks_menu" wx:elif="{{textconclusion_arry.length==1}}"> 
+      <view class="item" bindtap="toto" data-length="{{textconclusion_arry.length}}" >「{{textconclusion_arry.length}}」笔记 @注[{{texttime_arry[textconclusion_arry.length-1]}}]</view>
+</view>
+
+
+<view class="none" wx:else> 暂无笔记</view>  
+
+
+

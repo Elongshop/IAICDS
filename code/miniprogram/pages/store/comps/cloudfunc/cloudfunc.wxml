@@ -1,0 +1,3 @@
+<view class='database-container'>
+	<button plain="true" class="btn" bindtap="toFunc">点击体验云函数</button>
+</view>

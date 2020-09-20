@@ -1,0 +1,16 @@
+<view class='picker-container'>
+	<van-dropdown-menu>
+		<van-dropdown-item value="{{ value1 }}" options="{{ allDevice }}" bindchange='deviceChange' />
+		<van-dropdown-item value="{{ value2 }}" options="{{ allParams }}" bindchange='paramsChange' />
+	</van-dropdown-menu>
+	<view class='tool-box'>
+		<block wx:if="{{iconsShow}}">
+			<view class='box-container'>
+				<view class='ui-box' catchtap="toCompPage" data-id='picker'>UI</view>
+				<view class='js-box' catchtap="toCompPage" data-id='interval'>JS</view>
+				<view class='cloud-box' catchtap="toCompPage" data-id='axios'>云</view>
+			</view>
+		</block>
+		<image src='../../images/tool.png' class='tool-icon' bind:tap="handleIconTap"></image>
+	</view>
+</view>

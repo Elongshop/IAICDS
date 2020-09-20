@@ -1,0 +1,15 @@
+<view class='deviceMonitorNamesContainer'>
+		<view class='tool-box'>
+			<block wx:if="{{iconsShow}}">
+				<view class='box-container'>
+					<view class='ui-box' catchtap="toCompPage" data-id='flex'>UI</view>
+					<view class='js-box' catchtap="toCompPage" data-id='algo'>Algo</view>
+					<view class='cloud-box' catchtap="toCompPage" data-id='fan_cloud'>云</view>
+				</view>
+			</block>
+			<image src='../../images/tool.png' class='tool-icon' 
+			bind:tap="handleIconTap"></image>
+		</view>
+		<text class='deviceName'>15号风机</text>
+		<text class='deviceName'>21号风机</text>
+	</view>

@@ -1,0 +1,66 @@
+.comp-desc-container{
+  color: #333;
+  padding-left: 5%;
+  padding-right:5%;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  text-indent: 2rem;
+}
+
+.picker{
+  width: 100%;
+  text-align: center;
+}
+
+.flex-container{
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  background: #eee;
+}
+
+.flex1{
+  width: 20%;
+  height: 60px;
+  line-height: 60px;
+  background: purple;
+  text-align: center;
+}
+
+.flex1{
+  width: 20%;
+  height: 60px;
+  line-height: 60px;
+  background: purple;
+  text-align: center;
+}
+
+.flex2{
+  width: 20%;
+  height: 70px;
+  line-height: 70px;
+  background: orangered;
+  text-align: center;
+}
+
+.flex3{
+  width: 20%;
+  height: 80px;
+  line-height: 80px;
+  background: green;
+  text-align: center;
+}
+
+.flex4{
+  width: 20%;
+  height: 90px;
+  line-height: 90px;
+  background: yellow;
+  text-align: center;
+}
+
+.flex-shrink{
+  width: 40%;
+}

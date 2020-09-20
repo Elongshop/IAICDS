@@ -1,0 +1,12 @@
+<view class='monitorTimeContainer'>
+	<view class='monitorTime'>诊断时间：{{time}}</view>
+	<view class='tool-box'>
+		<block wx:if="{{iconsShow}}">
+			<view class='box-container'>
+				<view class='js-box' catchtap="toCompPage" data-id='time'>JS</view>
+			</view>
+		</block>
+		<image src='../../images/tool.png' class='tool-icon' bind:tap="handleIconTap"
+			data-id='time'></image>
+	</view>
+</view>

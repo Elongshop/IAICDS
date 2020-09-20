@@ -1,0 +1,3 @@
+<view class="desc">
+  风机结冰故障预测模型的实现较为复杂，您可跳转到“工业预测性维护在线实验平台”小程序，学习和体验该模型。</view>
+<button plain="true" class="btn" catchtap="toMiniProgram">点击学习预测性维护算法</button>

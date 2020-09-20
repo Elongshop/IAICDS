@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/apps/index",
+    "pages/store/index",
+    "pages/my/index",
+    "pages/apps/devices/fan/index",
+    "pages/apps/compPage/index",
+    "pages/store/comps/index",
+    "pages/apps/forms/index",
+    "pages/apps/forms/adminPage/admin",
+    "pages/apps/forms/ballDevPage/ballDev",
+    "pages/apps/forms/form_user/form_user",
+    "pages/apps/forms/IRDevPage/irDev",
+    "pages/apps/forms/ORDevPage/orDev",
+    "pages/apps/forms/form_user_manager/form_user_manager",
+    "pages/my/study/my-notebook/my-notebook",
+    "pages/my/new-guidence/func/func",
+    "pages/my/new-guidence/picture/picture",
+    "pages/my/study/my-comment/my-comment",
+    "pages/my/study/my-note/my-note"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "工业APP体验和拆解小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/apps/index",
+        "text": "案例集",
+        "iconPath": "images/apps.png",
+        "selectedIconPath": "images/appsSelected.png"
+      },
+      {
+        "pagePath": "pages/store/index",
+        "text": "组件库 ",
+        "iconPath": "images/store.png",
+        "selectedIconPath": "images/storeSelected.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/mySelected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,7 @@
+<view class='desc'>在风机APP中，使用vant weapp组件库中的下拉菜单实现风机设备和工况参数切换：</view>
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+</van-dropdown-menu>
+<view class='to-store'><text class='text' catchtap='toStoreComp' data-value='picker'>点击体验</text>原生picker选择器的使用</view>
+<view class='to-store1'>此外，在风机APP的工况分析中，使用到了Echarts中的折线图动态渲染当前工况参数的变化曲线，<text class='text' catchtap='toStoreComp' data-value='line'>点击体验</text>Echarts折线图的使用</view>

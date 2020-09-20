@@ -1,0 +1,16 @@
+<view class='comp-experience-container'>
+  <view class='desc'>通过设置flex容器中某个元素的order/flex-grow/flex-shrink属性，能修改该元素的排序和伸缩大小。</view>
+	<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+		<view class="picker">
+			属性：{{multiArray[0][multiIndex[0]]}} 属性值：{{multiArray[1][multiIndex[1]]}}
+		</view>
+		<view class='flex-container'>
+			<view class='flex1' style="{{attrName}}:{{attrValue}}">1</view>
+			<view class='flex2 {{shrink ? "item-shrink":""}}'>2</view>
+			<view class='flex3 {{shrink ? "item-shrink":""}}'>3</view>
+			<view class='flex4 {{shrink ? "item-shrink":""}}'>4</view>
+		</view>
+  </picker>
+	<view class='flex-desc'>注释：{{multiArray[0][multiIndex[0]]}}属性设置的是{{desc}}</view>
+  <view class='to-store'><text class='text' catchtap='toStoreComp' data-value='flex'>点击查看</text>关于Flex布局的介绍和基本的属性设置</view>
+</view>

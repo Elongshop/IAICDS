@@ -1,0 +1,19 @@
+{
+  "usingComponents": {
+    "van-loading": "@vant/weapp/loading/index",
+    "store-comp":"../../../components/storecomp/storecomp",
+    "flex":"../comps/flex/flex",
+    "scrollview":"../comps/scrollview/scrollview",
+    "picker":"../comps/picker/picker",
+    "scatter":"../comps/scatter/scatter",
+    "line":"../comps/line/line",
+    "cloud-database":"../comps/clouddatabase/clouddatabase",
+    "cloud-storage":"../comps/cloudstorage/cloudstorage",
+    "cloud-func":"../comps/cloudfunc/cloudfunc",
+    "timer":"../comps/timer/timer",
+    "interval":"../comps/interval/interval",
+    "onload":"../comps/onload/onload",
+    "if-else":"../comps/ifelse/ifelse",
+    "statics":"../comps/statics/statics"
+  }
+}

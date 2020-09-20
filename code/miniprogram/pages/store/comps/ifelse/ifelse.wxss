@@ -1,0 +1,18 @@
+
+
+
+.if-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checked-box{
+  margin-top: 10px;
+  width: 100%;
+  text-indent: 2rem;
+  background: #ddd;
+  box-sizing: border-box;
+  padding: 5%;
+}

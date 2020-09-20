@@ -1,0 +1,7 @@
+<comp-title compChinName="{{compChinName}}" compEngName="{{compEngName}}"></comp-title>
+<van-divider contentPosition="left" textColor="#1989fa">需求分析</van-divider>
+<view class='comp-desc-container'>{{compDesc}}</view>
+<van-divider contentPosition="center" textColor="#1989fa">组件体验</van-divider>
+<slot name='{{slotName}}'></slot>
+<van-divider contentPosition="right" textColor="#1989fa">组件代码</van-divider>
+<code-img imgSrc="{{imgSrc}}"></code-img>

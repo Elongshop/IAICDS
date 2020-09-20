@@ -1,0 +1,16 @@
+<van-tabs active="{{ tabActive }}" bind:change="tabChange" color="#1296db">
+	<van-tab title="设备监控"></van-tab>
+	<van-tab title="工况分析"></van-tab>
+</van-tabs>
+
+<block wx:if="{{tabActive==0}}">
+	<device-names></device-names>
+	<device-predict></device-predict>
+	<time></time>
+	<device-analysis></device-analysis>
+</block>
+<block wx:else>
+	<params-view currentDevice="{{currentDevice}}"></params-view>
+	<device-picker bindchangeDevice='handleDeviceChange' bindchangeParams='handleParamsChange'></device-picker>
+	<chart currentDevice="{{currentDevice}}" currentParams="{{currentParams}}"></chart>
+</block>

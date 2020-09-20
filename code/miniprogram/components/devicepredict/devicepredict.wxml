@@ -1,0 +1,14 @@
+<view class='circleContainer'>
+	<view class="circle">
+		<view class="innerCircle">
+			<view class="predictText" wx:if='{{fan_15_predicts[devicePredictIndex] ==0}}' style="color:green">正常</view>
+			<view class="predictText" wx:else>故障</view>
+		</view>
+	</view>
+	<view class="circle">
+		<view class="innerCircle">
+			<view class="predictText" wx:if='{{fan_21_predicts[devicePredictIndex] ==0}}' style="color:green">正常</view>
+			<view class="predictText" wx:else>故障</view>
+		</view>
+	</view>
+</view>

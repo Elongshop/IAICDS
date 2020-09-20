@@ -1,0 +1,43 @@
+.radio-group{
+  display: flex;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.page-section-spacing{
+  margin-top: 20rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 80%;
+  height: 300rpx;
+  text-align: center;
+  line-height: 300rpx;
+  font-size: 24px;
+}
+
+.demo-text-1{
+  background: red;
+}
+
+.demo-text-2{
+  background: yellow;
+}
+
+.demo-text-3{
+  background: green;
+}

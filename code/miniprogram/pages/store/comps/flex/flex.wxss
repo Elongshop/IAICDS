@@ -1,0 +1,54 @@
+.flex-container{
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  background: #eee;
+  text-align: center;
+}
+
+.flex1{
+  width: 20%;
+  height: 60px;
+  line-height: 60px;
+  background: purple;
+  text-align: center;
+}
+
+.flex2{
+  width: 20%;
+  height: 70px;
+  line-height: 70px;
+  background: orangered;
+  text-align: center;
+}
+
+.flex3{
+  width: 20%;
+  height: 80px;
+  line-height: 80px;
+  background: green;
+  text-align: center;
+}
+
+.flex4{
+  width: 20%;
+  height: 90px;
+  line-height: 90px;
+  background: yellow;
+  text-align: center;
+}
+
+.picker{
+  width: 100%;
+  text-align: center;
+}
+
+.flex-desc{
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 14px;
+  color:#666;
+  margin-top: 10px;
+}

@@ -1,0 +1,9 @@
+.van-icon-arrow{
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.van-cell__left-icon-wrap{
+  font-size: 24px !important;
+  color: #aaa;
+}

@@ -1,0 +1,29 @@
+<view class='scroll-view-container' wx:if="{{showLoading === 1}}">
+	<scroll-view scroll-x scroll-y style="width: 100%;height:240px;margin-top:2px">
+		<view class='gkContentBox'>
+			<view class="gkTitle" style="color:#666">工况参数</view>
+			<view class="gkTitle" style="color:#237ab7">当前值</view>
+			<view class="gkTitle" style="color:orange">历史最高值</view>
+			<view class="gkTitle" style="color:purple">历史最低值</view>
+		</view>
+		<view class='gkContentBox' wx:for='{{paramsResult}}' wx:for:item='item' wx:key='index'>
+			<view class="gkContent gkName">{{item.name}}</view>
+			<view class="gkContent" style="color:#237ab7">{{item.dataArray[i]}}</view>
+			<view class="gkContent" style="color:orange">{{item.max}}</view>
+			<view class="gkContent" style="color:purple">{{item.min}}</view>
+		</view>
+	</scroll-view>
+	<view class='tool-box'>
+		<block wx:if="{{iconsShow}}">
+			<view class='box-container'>
+				<view class='ui-box' catchtap="toCompPage" data-id='scrollview'>UI</view>
+				<view class='js-box' catchtap="toCompPage" data-id='static'>JS</view>
+				<view class='cloud-box' catchtap="toCompPage" data-id='axios'>云</view>
+			</view>
+		</block>
+		<image src='../../images/tool.png' class='tool-icon' bind:tap="handleIconTap"></image>
+	</view>
+</view>
+<view class='loading-container' wx:else>
+	<van-loading type="spinner" color="#1989fa" size="40px" />
+</view>

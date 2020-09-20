@@ -1,0 +1,45 @@
+<van-divider contentPosition="right" fontSize="30" textColor="#0099cc">图标释义</van-divider>
+
+<van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+  <van-collapse-item title="组件拆解入口" name="1">
+    图标小扳手暗喻着拆解组件的意思，其拆解的组件都是模块的重点组件。
+  </van-collapse-item>
+  <van-collapse-item title="UI" name="2">
+    UI即界面布局，此小程序则使用了典型的弹性盒子模型。
+  </van-collapse-item>
+  <van-collapse-item title="JS" name="3">
+    JS指的是联系前后端交互的纽带，一般也是数据可视化的重要部分。
+  </van-collapse-item>
+  <van-collapse-item title="AIgo" name="4">
+    AIgo在此小程序中代表着算法模块，通过算法模型喂养数据即可获得相对可信的数据。
+  </van-collapse-item>
+  <van-collapse-item title="云" name="5">
+    本小程序核心所在于云，此图标意味着某处是以云开发为核心进行交互的。
+  </van-collapse-item>
+</van-collapse>
+
+<van-divider contentPosition="left">图标</van-divider>
+<view class="container">
+  <view class="box1">
+    <image src="https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/WechatIMG3.jpeg?sign=d8417ba342d8e7eb35a236154123f014&t=1600529355"></image>
+    <view class="meaning"> :组件拆解入口</view>
+  </view>
+  <view class="box2">
+  <view class="box1">
+    <image src="https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/WechatIMG4.jpeg?sign=4a35df8e4072d1df805fe3fa29bc4e7b&t=1600529383"></image>
+    <view class="meaning"> :UI</view>
+  </view>
+  <view class="box1">
+    <image src="https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/WechatIMG5.jpeg?sign=76dd6151cea48370b0c9ab9998a1215d&t=1600529405"></image>
+    <view class="meaning"> :JS</view>
+  </view>
+  <view class="box1">
+    <image src="https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/WechatIMG8.jpeg?sign=2873e899e420415956e2d6f7291410d9&t=1600529460"></image>
+    <view class="meaning">:AIgo</view>
+  </view>
+  <view class="box1">
+   <image src="https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/WechatIMG6.jpeg?sign=f18d68f051d38f10aafa59b2ef651418&t=1600529424"></image>
+    <view class="meaning"> :云</view>
+  </view>
+</view>
+</view>

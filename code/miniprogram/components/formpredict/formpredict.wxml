@@ -1,0 +1,35 @@
+<!--components/formpredict/formpredict.wxml-->
+<view class="container">
+  <view class="outer"
+    style="background: url(https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/outer2.png?sign=7ab0e91909c4157554b4384bd18b0978&t=1600331979); background-size: cover">
+    <view class="outerText" wx:if='{{form_predict[formPredictIndex]==3}}' style="color:red">外圈故障</view>
+    <view class="outerText" wx:else style="color:green">外圈正常</view>
+  </view>
+  <view class="ball"
+    style="background: url(https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/ball2.png?sign=5974020bd6b076ce81b5cf6144788220&t=1600331614); background-size: cover">
+    <view class="predictText" wx:if='{{form_predict[formPredictIndex] ==1}}' style="color:red">球故障</view>
+    <view class="predictText" wx:else style="color:green">球正常</view>
+  </view>
+</view>
+<view class="container_two">
+  <view class="inner"
+    style="background: url(https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/inner3.png?sign=a4dd19deb0c32f10fb6045adaa733618&t=1600309762); background-size: cover">
+    <view class="innerText" wx:if='{{form_predict[formPredictIndex] ==2}}' style="color:red">内圈故障</view>
+    <view class="innerText" wx:else style="color:green">内圈正常</view>
+  </view>
+  <view class="nor"
+    style="background: url(https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/nor2.png?sign=e8892ffca45e907ef7c5c49d531f47f0&t=1600332624); background-size: cover">
+    <view class="predictText" wx:if='{{form_predict[formPredictIndex] ==0}}' style="color:green">设备运行良好</view>
+    <view class="predictText" wx:else style="color:red">设备故障请检修</view>
+  </view>
+  <view class='tool-box'>
+    <block wx:if="{{iconsShow}}">
+      <view class='box-container'>
+        <view class='ui-box' catchtap="toCompPage" data-id='flex'>UI</view>
+        <view class='js-box' catchtap="toCompPage" data-id='form_if'>JS</view>
+        <view class='cloud-box' catchtap="toCompPage" data-id='form_cloud'>云</view>
+      </view>
+    </block>
+    <image src='../../images/tool.png' class='tool-icon' bind:tap="handleIconTap"></image>
+  </view>
+</view>

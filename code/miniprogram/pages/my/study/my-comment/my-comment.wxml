@@ -1,0 +1,24 @@
+<!--miniprogram/pages/my/study/my-comment/my-comment.wxml-->
+<!-- <van-divider dashed contentPosition="left" fontSize="25" textColor="#1989fa">我的评价</van-divider> -->
+
+
+<van-divider contentPosition="center">风机部分</van-divider>
+<text>风机案例用户体验:</text>
+<van-rate value="{{ score_fan }}" bind:change="onfanScoreChange" />
+
+<van-divider contentPosition="center">工单部分</van-divider>
+<text>工单案例用户体验:</text>
+<van-rate value="{{ score_form }}" bind:change="onformScoreChange" />
+
+<van-divider contentPosition="center">组件库部分</van-divider>
+<text>组件库用户体验:</text>
+<van-rate value="{{ score_component }}" bind:change="oncomponentScoreChange" />
+
+<van-divider contentPosition="center">数据可视化部分</van-divider>
+<text>数据可视化用户体验:</text>
+<van-rate value="{{ score_viewing }}" bind:change="onviewingScoreChange" />
+<van-divider contentPosition="center">建议部分</van-divider>
+<text class="com">我的建议：</text>
+<van-field value="{{ content }}" placeholder="给出您宝贵的建议" bind:change="onContentChange" size="large"/>
+<van-button size="large" type="info" bindtap="submit">提交评价</van-button>
+

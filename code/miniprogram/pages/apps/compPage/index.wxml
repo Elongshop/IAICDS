@@ -1,0 +1,48 @@
+<block wx:if='{{loading}}'>
+	<view class='loading-container'>
+		<van-loading type="spinner" size="40px" />
+	</view>
+</block>
+
+<block wx:else>
+	<app-comp compEngName="{{compEngName}}" compChinName="{{compChinName}}" compDesc="{{compDesc}}" imgSrc="{{imgSrc}}" slotName='{{key}}'>
+		<view slot='{{key}}'>
+			<block wx:if="{{key === 'algo'}}">
+				<fan-algo></fan-algo>
+			</block>
+			<block wx:if="{{key === 'flex'}}">
+				<fan-flex></fan-flex>
+			</block>
+			<block wx:if="{{key === 'scrollview'}}">
+				<fan-scrollview></fan-scrollview>
+			</block>
+			<block wx:if="{{key === 'picker'}}">
+				<fan-picker></fan-picker>
+			</block>
+			<block wx:if="{{key === 'fan_cloud'}}">
+				<fan-cloud></fan-cloud>
+			</block>
+			<block wx:if="{{key === 'axios'}}">
+				<fan-axios></fan-axios>
+			</block>
+			<block wx:if="{{key === 'static'}}">
+				<fan-statics></fan-statics>
+			</block>
+			<block wx:if="{{key === 'fan_if'}}">
+				<fan-if></fan-if>
+			</block>
+			<block wx:if="{{key === 'interval'}}">
+				<fan-interval></fan-interval>
+			</block>
+			<block wx:if="{{key === 'time'}}">
+				<fan-timer></fan-timer>
+			</block>
+			<block wx:if="{{key === 'form_cloud'}}">
+				<form-cloud></form-cloud>
+			</block>
+			<block wx:if="{{key === 'form_if'}}">
+				<fan-if></fan-if>
+			</block>
+		</view>
+	</app-comp>
+</block>

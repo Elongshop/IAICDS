@@ -1,0 +1,52 @@
+@import '../common.wxss';
+.deviceAnalysisContainer {
+  height: 100px;
+  background-color: rgba(221, 221, 221, 0.5);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.deviceMonitorContent {
+  height: 100px;
+  width: 18%;
+  text-align: center;
+}
+
+.deviceMonitorNums {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+
+.deviceMonitors {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+.deviceMonitorNumsBox {
+  height: 75px;
+  border-right: 1px solid black;
+  width: 26%;
+}
+
+.deviceMonitorNumsDesc {
+  text-align: center;
+}
+
+.tool-box{
+  height: 80px;
+}

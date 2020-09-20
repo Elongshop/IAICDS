@@ -1,0 +1,6 @@
+/* pages/store/comps/picker/picker.wxss */
+.picker-container{
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}

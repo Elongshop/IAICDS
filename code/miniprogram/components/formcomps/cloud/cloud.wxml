@@ -1,0 +1,14 @@
+<view class='desc'>
+  工单APP中的云数据库：label字段对应轴承部位的故障信息。
+</view>
+<view class='comp-code-container'>
+  <image src='{{databaseImg}}' style="width:90%;" mode='widthFix'></image>
+</view>
+<view class='to-store'><text class='text' catchtap='toStoreComp' data-value='clouddatabase'>点击体验</text>云数据库的增删改查</view>
+<view class='desc'>
+  工单APP中的云函数：传入要读取的集合名，一次性获取该集合中所有的数据。
+</view>
+<view class='comp-code-container'>
+  <image src='{{funcImg}}' style="width:90%;" mode='widthFix'></image>
+</view>
+<view class='to-store'><text class='text' catchtap='toStoreComp' data-value='cloudfunc'>点击体验</text>云函数的基础使用</view>

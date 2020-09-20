@@ -1,0 +1,9 @@
+<view class="box">现有wind_speed工况的一条原始数据：</view>
+<view class="box" style="color:green;font-weight:bold">1.859993305</view>
+<view class='step-container'>
+  <van-stepper value="{{5 }}" min="1" max="9"  bind:change="onChange"/>
+</view>
+<view class="box">截取后的结果：<text style="color:red;font-weight:bold">{{result}}</text></view>
+<view class='to-store'>
+  <text class='text' catchtap='toStoreComp' data-value='static'>点击体验</text>获取多个数据的最值
+</view>

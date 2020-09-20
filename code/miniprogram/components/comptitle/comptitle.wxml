@@ -1,0 +1,4 @@
+<view class='comp-name-container'>
+	<view class='comp-english-name'>{{compEngName}}</view>
+	<view class='comp-chinese-name'>{{compChinName}}</view>
+</view>

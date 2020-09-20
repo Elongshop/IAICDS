@@ -1,0 +1,4 @@
+<view class='container'>
+	<case-card text='设备监控' src="../../images/monitorBg.jpg" case-name='风机APP体验和拆解' case-type='monitor'></case-card>
+	<case-card text='工单流程' src="../../images/formBg.jpg" text-color="#000" case-type='form'></case-card>
+</view>

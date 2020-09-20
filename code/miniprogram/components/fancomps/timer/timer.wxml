@@ -1,0 +1,6 @@
+<view class='desc'>
+  诊断时间组件是通过<text class="text">定时器</text>和格式化获取<text class="text">时间戳</text>相结合的方法实现的。您可跳转到组件库中查看时间戳获取和定时器组件。
+</view>
+<view class='desc'><text class="text" catchtap='toStoreComp' data-value='timer'>点击体验</text>时间戳组件
+<text class="text" catchtap='toStoreComp' data-value='interval'>点击体验</text>定时器组件
+</view>

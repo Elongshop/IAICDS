@@ -1,0 +1,4 @@
+<view class='desc'>
+  切换设备状态：<switch checked="{{switchChecked}}" bindchange="switchChange"></switch>
+</view>
+<view class="to-store"><text class='text' catchtap='toStoreComp' data-value='ifelse'>点击体验</text>wx:if的用法</view>

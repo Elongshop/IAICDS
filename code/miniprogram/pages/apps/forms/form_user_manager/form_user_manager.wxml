@@ -1,0 +1,8 @@
+<view class='box'>
+  <view class='title'>欢迎来到轴承运维管理系统</view>
+  <view class='subtitle'>请选择要登录的账号</view>
+  <view class='admin-box' bindtap="toDevPage" data-type='admin'>管理员</view>
+  <view class='devops-box' bindtap="toDevPage" data-type='ir'>内圈故障运维人员</view>
+  <view class='devops-box' bindtap="toDevPage" data-type='or'>外圈故障运维人员</view>
+  <view class='devops-box' bindtap="toDevPage" data-type='ball'>球故障运维人员</view>
+</view>

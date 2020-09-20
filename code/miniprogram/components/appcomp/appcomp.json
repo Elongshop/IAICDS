@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-divider": "@vant/weapp/divider/index",
+    "code-img":"../codeimg/codeimg",
+    "comp-title":"../comptitle/comptitle",
+    "comp-scene":"../compscene/compscene"
+  }
+}

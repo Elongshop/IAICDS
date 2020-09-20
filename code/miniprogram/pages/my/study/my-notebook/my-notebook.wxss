@@ -1,0 +1,87 @@
+/* miniprogram/pages/my/study/my-notebook/my-notebook.wxss */
+
+.notebook{
+  display: flex;
+  border: 6rpx rgb(150, 160, 155) solid;
+  height: 750rpx;
+  border-radius: 10rpx;
+}
+
+
+.notebooks_menu{
+  display: flex;
+  /* border: springgreen solid; */
+  height: 400rpx;
+  width: 740rpx;
+  flex-direction: column;
+  background-image: url('https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/background2.png?sign=7cb677bd75707ace999e696b01de10db&t=1600503281');
+}
+
+.content{
+  border: 6rpx rgb(150, 160, 155) solid;
+  height: 300rpx;
+  margin: 50rpx 40rpx;
+  border-radius: 15rpx;
+  background-image: url('https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/background.jpg?sign=b70df99c85de88d4afe7e9ea8c1029b5&t=1600502724');
+  font-size: larger;
+}
+
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 6rpx rgb(58, 82, 128) solid;
+  height: 50rpx;
+  width: 600rpx;
+  margin-top: 10rpx;
+  margin-left: 55rpx;
+  border-radius: 15rpx;
+}
+
+/* .item2{
+  display: flex;
+  flex-direction: row;
+  border: springgreen solid;
+  height: 50rpx;
+  width: 740rpx;
+}.item3{
+  display: flex;
+  flex-direction: row;
+  border: springgreen solid;
+  height: 50rpx;
+  width: 740rpx;
+}.item4{
+  display: flex;
+  flex-direction: row;
+  border: springgreen solid;
+  height: 50rpx;
+  width: 740rpx;
+}.item5{
+  display: flex;
+  flex-direction: row;
+  border: springgreen solid;
+  height: 50rpx;
+  width: 740rpx;
+} */
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/background4.jpg?sign=0762866c31ef84d2dbf1917fb2da92e1&t=1600503370');
+}
+
+.none{
+  font-size: 60rpx;
+  font-style: oblique;
+  color: lightslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: springgreen solid; */
+  height: 400rpx;
+  width: 740rpx;
+  flex-direction: column;
+  background-image: url('https://7765-wechatcloud-6lxwn-1302953363.tcb.qcloud.la/background2.png?sign=7cb677bd75707ace999e696b01de10db&t=1600503281');
+}

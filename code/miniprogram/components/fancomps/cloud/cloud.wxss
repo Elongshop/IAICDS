@@ -1,0 +1,4 @@
+@import '../../common.wxss';
+.to-store{
+  margin-top: 0;
+}

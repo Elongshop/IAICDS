@@ -1,0 +1,14 @@
+<view class='comp-experience-container'>
+	<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+		<view class="picker">
+			属性：{{multiArray[0][multiIndex[0]]}} 属性值：{{multiArray[1][multiIndex[1]]}}
+		</view>
+		<view class='flex-container' style="{{attrName}}:{{attrValue}}">
+			<view class='flex1'>1</view>
+			<view class='flex2'>2</view>
+			<view class='flex3'>3</view>
+			<view class='flex4'>4</view>
+		</view>
+	</picker>
+	<view class='flex-desc'>注释：{{multiArray[0][multiIndex[0]]}}属性设置的是{{desc}}</view>
+</view>

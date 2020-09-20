@@ -1,0 +1,13 @@
+@import '../../common.wxss';
+.desc{
+  margin-bottom: 10px;
+}
+.to-store1{
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 30px;
+  margin-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-indent: 2rem;
+}

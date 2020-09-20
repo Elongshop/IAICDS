@@ -1,0 +1,29 @@
+@import '../common.wxss';
+
+.monitorTimeContainer {
+  position: relative;
+}
+
+.monitorTime {
+  height: 40px;
+  line-height: 40px;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.time-icon {
+  position: absolute;
+  top: -10%;
+  right: 1%;
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+}
+
+.tool-box{
+  top:-10px;
+  height: 40px;
+}

@@ -1,0 +1,8 @@
+<block wx:if="{{show===1}}">
+  <view class='comp-application-container'>
+    {{compName}}可以应用在<text style='color:#237ab7;font-weight:bold' catchtap="toAppCompPage">风机APP中</text>
+  </view>
+</block>
+<block wx:else>
+  <view class='box'>暂无</view>
+</block>

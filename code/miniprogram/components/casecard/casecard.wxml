@@ -1,0 +1,10 @@
+<view class='caseCard' catchtap="clickCard">
+		<image src="{{src}}"></image>
+		<view class='caseCardText' style='color:{{textColor}}'>{{text}}</view>
+</view>
+<van-action-sheet
+  show="{{ show }}"
+  actions="{{ actions }}"
+	bind:select="onSelect"
+	bind:close="onClose"
+/>

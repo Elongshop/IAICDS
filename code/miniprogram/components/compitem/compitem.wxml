@@ -1,0 +1,4 @@
+<view bindtap="toCompPage" url="{{compPath}}" border="{{ showBorder }}"  class="cell">
+  <text>{{title}}</text>
+  <image src='../../images/arrow.png' class='arrow'></image>
+</view>
