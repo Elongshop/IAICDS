@@ -32,23 +32,11 @@ Page({
    console.log(this.data.disabled_confirm)
   },
   
-
-  getData(coll){
-    return new Promise((resolve,reject)=>{
-      db.collection(coll).aggregate()
-      .sort({
-        time:-1
-      })
-      .end().then(res=>{
-        resolve(res.list)
-      })
-    })
-  },
   getFormData(){
     let orArray = []
     let irArray = []
     let ballArray = []
-    Promise.all([this.getData('or'),this.getData('ir'),this.getData('ball')]).then(res=>{
+    Promise.all([util.getFormData('or'),util.getFormData('ir'),util.getFormData('ball')]).then(res=>{
       orArray = res[0].map(item=>{
         return {
           type:item.type,

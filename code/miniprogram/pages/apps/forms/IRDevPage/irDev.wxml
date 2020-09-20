@@ -22,10 +22,9 @@
         <view class="toDo">
             <van-icon name="flag-o" color="red" size="50rpx" class="icon1" />
             <view class="text_todo">内圈故障 ({{state}})</view>
-            <van-button type="primary" round size="small" bindtap="form_confirm" data-state="处理中"
+            <van-button type="info" round size="small" bind:click="form_confirm" data-state="处理中"
                 disabled='{{disabled_confirm}}'>确认处理</van-button>
-            <view class="inter"></view>
-            <van-button type="primary" round size="small" bindtap="form_submit" data-state="待处理"
+            <van-button type="primary" round size="small" bind:click="form_submit" data-state="待处理"
                 disabled='{{disabled_submit}}'>确认提交</van-button>
         </view>
         <!-- <view class="time">计时器</view> -->

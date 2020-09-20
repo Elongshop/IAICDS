@@ -32,8 +32,8 @@
     "packNpmManually": false,
     "packNpmRelationList": []
   },
-  "appid": "wxa6502f4e5895d23b",
-  "projectname": "cloudDemo3",
+  "appid": "wx651120a8aab04376",
+  "projectname": "IAICDS",
   "libVersion": "2.12.2",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
@@ -190,6 +190,13 @@
           "id": -1,
           "name": "pages/my/new-guidence/func/func",
           "pathName": "pages/my/new-guidence/func/func",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/apps/forms/ORDevPage/orDev",
+          "pathName": "pages/apps/forms/ORDevPage/orDev",
           "scene": null
         }
       ]

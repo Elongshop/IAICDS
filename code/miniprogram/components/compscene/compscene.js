@@ -32,7 +32,7 @@ Component({
           break;
         }
         case '云数据库':{
-          value='cloud'
+          value='fan_cloud'
           break;
         }
         case '云函数':{
@@ -44,7 +44,7 @@ Component({
           break;
         }
         case '条件渲染':{
-          value='if'
+          value='fan_if'
           break;
         }
         case '时间戳':{

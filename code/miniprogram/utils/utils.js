@@ -1,3 +1,4 @@
+
 function formatTime(date) {
   var year = date.getFullYear()
   var month = date.getMonth() + 1
@@ -38,10 +39,32 @@ function getCompsData(dbName, key, cb) {
     }
   })
 }
-
+function getFormData(collection){
+  const db = wx.cloud.database()
+  let array = []
+  return new Promise((resolve,reject)=>{
+    db.collection(collection).aggregate()
+    .sort({
+      time:-1
+    })
+    .end().then(res=>{
+      array =res.list.map(item=>{
+        return {
+          type:item.type,
+          time:item.time
+        }
+      })
+      if(array.length>=5){
+        array = array.slice(0,5)
+      } 
+      resolve(array)
+    })
+  })
+}
 
 module.exports = {
   formatTime: formatTime,
   getAccessToken: getAccessToken,
-  getCompsData: getCompsData
+  getCompsData: getCompsData,
+  getFormData:getFormData
 }

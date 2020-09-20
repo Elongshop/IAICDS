@@ -1,9 +1,10 @@
 const util = require('../../../../utils/utils')
+const form = require('../common/form')
 const db = wx.cloud.database();
 Page({
 
   data: {
-    value: 70,
+    value: 20,
     gradientColor: {
       '0%': '#ff0000',
       '100%': '#00cc00',
@@ -12,7 +13,8 @@ Page({
     disabled_confirm: false,
     disabled_submit: true,
     start_time:'',
-    end_time:''
+    end_time:'',
+    orArray:[]
   },
 
   form_confirm: function(event){
@@ -53,86 +55,19 @@ Page({
         disabled_confirm: false,
         disabled_submit: true
       })
-      this.getFormData()
+      this.getORArray()
     })
   },
   
-  
-  getFormData(){
-    let orArray = []
-    db.collection('or').aggregate()
-    .sort({
-      time:-1
-    })
-    .end().then(res=>{
-      orArray =res.list.map(item=>{
-        return {
-          type:item.type,
-          time:item.time
-        }
-      })
-      let val = orArray.length
+  getORArray(){
+    form.getFormArray('or',res=>{
       this.setData({
-        value:val
-      })
-      if(orArray.length>=5){
-        orArray = orArray.slice(0,5)
-      }
-      this.setData({
-        orArray
+        orArray:res
       })
     })
   },
+
   onLoad: function (options) {
-    this.getFormData()
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    this.getORArray()
   }
 })

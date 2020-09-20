@@ -1,0 +1,107 @@
+.container{
+  display: flex;
+  width: auto;
+  height: max-content;
+  background-image: url('https://6465-dev-k2g40-1302532431.tcb.qcloud.la/banner.jpg?sign=24f669eb8318a0e9fbb0323977a5e89d&t=1600576399');
+}
+
+.container_two{
+  display: flex;
+  flex-direction: row;
+  height: 210rpx;
+  width: 600rpx;
+  margin-bottom: 40rpx;
+}
+
+.container_three{
+  display: flex;
+  flex-direction: column;
+  width: 100%rpx;
+  height: 700rpx;
+}
+
+.department{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress{
+  margin-left: 30rpx;
+}
+
+.big_box{
+  display: flex;
+  flex-direction: column;
+}
+.toDo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 5rpx red solid;
+  height: 90rpx;
+  border-radius: 20rpx;
+}
+
+.done{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 20rpx;
+}
+
+.text_todo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+van-icon{
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+
+
+.text_done{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+  border: 5rpx green solid;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.text_misson{
+  width: 10rpx;
+  margin-left: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line{
+  border-left: 5rpx solid #517b7b;
+  margin-left: 30rpx;
+}
+
+.inter{
+  width: 10rpx;
+}
+
+van-button{
+  margin-top: 14rpx;
+  margin-left: 12rpx;
+}
+
+.van-circle__text{
+  color: white !important;
+}

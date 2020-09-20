@@ -1,4 +1,5 @@
 const util = require('../../../../utils/utils')
+const form = require('../common/form')
 const db = wx.cloud.database();
 Page({
   data: {
@@ -11,11 +12,11 @@ Page({
     disabled_confirm: false,
     disabled_submit: true,
     start_time:'',
-    end_time:''
+    end_time:'',
+    irArray:[]
   },
 
   form_confirm: function(event){
-    //console.log(event.target.dataset.state)
     this.setData({
       state: event.target.dataset.state,
       disabled_confirm: true,
@@ -53,82 +54,18 @@ Page({
         disabled_confirm: false,
         disabled_submit: true
       })
-      this.getFormData()
+      this.getIRArray()
     })
   },
   
   onLoad: function (options) {
-    this.getFormData()
+    this.getIRArray()
   },
-
-  getFormData(){
-    let irArray = []
-    db.collection('ir').aggregate()
-    .sort({
-      time:-1
-    })
-    .end().then(res=>{
-      irArray =res.list.map(item=>{
-        return {
-          type:item.type,
-          time:item.time
-        }
-      })
-      let val = irArray.length
+  getIRArray(){
+    form.getFormArray('ir',res=>{
       this.setData({
-        value:val
-      })
-      if(irArray.length>=5){
-        irArray = irArray.slice(0,5)
-      }
-      this.setData({
-        irArray
+        irArray:res
       })
     })
-  },
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
   }
 })
